@@ -15,24 +15,22 @@ interface PageHeaderProps {
 // FC === FunctionComponent
 // const PageHeader:React.FunctionComponent<PageHeaderProps> = () => {
 const PageHeader:React.FC<PageHeaderProps> = (props) => {
-  return(
-    <div id="page-teacher-list" className="container">
-      <header className="page-header">
-        <div className="top-bar-container">
-          <Link to="/">
-            <img src={backIcon} alt="Voltar"/>
-          </Link>
-          <img src={logoImg} alt="Proffy"/>
-        </div>
+  return (
+    <header className="page-header">
+      <div className="top-bar-container">
+        <Link to="/">
+          <img src={backIcon} alt="Voltar"/>
+        </Link>
+        <img src={logoImg} alt="Proffy"/>
+      </div>
 
-        <div className="header-content">
-          <strong>{props.title}</strong>
-        </div>
-
+      <div className="header-content">
+        <strong>{props.title}</strong>
+        
         {/* props.children é equivalente ao slot no vue */}
         {props.children}
-      </header>
-    </div>
+      </div>
+    </header>
   )
 }
 
