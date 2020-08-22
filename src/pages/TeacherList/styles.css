@@ -3,6 +3,10 @@
   height: 100vh;
 }
 
+#page-teacher-list main {
+  margin: 3.2rem auto;
+  width: 90%;
+}
 
 #search-teachers {
   margin-top: 3.2rem;
@@ -46,11 +50,16 @@ resumindo: estiliza os todos input-blocks menos o primeiro */
   bottom: 0;
 }
 
-
 /* desktop */
 @media (min-width: 700px) {
   #page-teacher-list {
     max-width: 100%;
+  }
+
+  #page-teacher-list main {
+    padding: 32px 0;
+    max-width: 740px;
+    margin: 0 auto;
   }
 
   #search-teachers {
