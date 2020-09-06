@@ -38,7 +38,7 @@
 }
 
 .page-header .header-content p {
-  max-width: 30rem;
+  /* max-width: 30rem; */
   line-height: 2.6rem;
   font-size: 1.6rem;
   color: var(--color-text-in-primary);
