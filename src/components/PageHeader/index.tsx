@@ -6,10 +6,11 @@ import backIcon from '../../assets/images/icons/back.svg'
 
 import './styles.css'
 
-/* Uma vez, fazendo uso do TypeScript, podemos definir 
+/* Uma vez, fazendo uso do TypeScript, temos que definir 
 tipos das props dos components */ 
 interface PageHeaderProps {
-  title: string
+  title: string,
+  description?: string
 }
 
 // FC === FunctionComponent
@@ -26,7 +27,8 @@ const PageHeader:React.FC<PageHeaderProps> = (props) => {
 
       <div className="header-content">
         <strong>{props.title}</strong>
-        
+        {props.description && <p>{props.description}</p>}
+
         {/* props.children é equivalente ao slot no vue */}
         {props.children}
       </div>
