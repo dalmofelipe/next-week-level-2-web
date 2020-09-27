@@ -18,6 +18,9 @@
   border: 0;
   padding: 0 2.4rem;
 }
+#page-teacher-form main .schedule-item + .schedule-item {
+  margin-top: 2.4rem;
+}
 #page-teacher-form main fieldset + fieldset {
   margin-top: 6.4rem;
 }
@@ -104,6 +107,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     column-gap: 1.6rem;
+    margin-top: 1.6rem;
   }
   #page-teacher-form main .schedule-item .input-block {
     margin-top: 0 !important;
