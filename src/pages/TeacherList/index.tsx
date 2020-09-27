@@ -6,6 +6,9 @@ import TeacherItem from '../../components/TeacherItem'
 import Input from '../../components/Input'
 import Select from '../../components/Select'
 
+import mockSubjects from '../../utils/subjects'
+import mockWeekDays from '../../utils/weekDays'
+
 
 function TeacherList() {
   return(
@@ -15,25 +18,12 @@ function TeacherList() {
           <Select
             label="Matéria" 
             name="subject" 
-            options={[
-              {value: "Matemática", label: "Matemática"},
-              {value: "Inglês", label: "Inglês"},
-              {value: "Física", label: "Física"},
-              {value: "Química", label: "Química"},
-              {value: "Economia", label: "Economia"},
-            ]} 
+            options={mockSubjects} 
           />
           <Select
             label="Dia da semana" 
             name="week_day" 
-            options={[
-              {value: "1", label: "Segunda-feira"},
-              {value: "2", label: "Terça-feira"},
-              {value: "3", label: "Quarta-feira"},
-              {value: "4", label: "Quinta-feira"},
-              {value: "5", label: "Sexta-feira"},
-              {value: "6", label: "Sábado"},
-            ]} 
+            options={mockWeekDays} 
           />
           <Input label="Hora" name="time" type="time" />
         </form>
